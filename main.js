@@ -1,18 +1,16 @@
-let number,display,drop,size,posX,delay,duration;
-
 //  for rain effect
 function rain() {
-    number = Math.floor(window.innerWidth/5);
-    display = document.querySelector("body");
+    let number = Math.floor(window.innerWidth/5);
+    let display = document.querySelector("body");
     for(let i=0;i<number;i++)
     {
-        drop = document.createElement('i');
+        let drop = document.createElement('i');
         display.appendChild(drop);
-        size = Math.random()*5;
+        let size = Math.random()*5;
         size += 0.2;
-        posX = Math.floor(Math.random()*window.innerWidth);
-        delay = Math.random()*-20;
-        duration = Math.random()*5;
+        let posX = Math.floor(Math.random()*window.innerWidth);
+        let delay = Math.random()*-20;
+        let duration = Math.random()*5;
         duration += 2;
         drop.style.width = size+'px';
         drop.style.left = posX+'px';
