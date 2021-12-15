@@ -2,7 +2,6 @@ let number,display,drop,size,posX,delay,duration;
 
 //  for rain effect
 function rain() {
-    flag = 0;
     number = Math.floor(window.innerWidth/5);
     display = document.querySelector("body");
     for(let i=0;i<number;i++)
